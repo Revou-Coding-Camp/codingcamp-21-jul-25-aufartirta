@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RevoU Todo List Application</title>
+  </head>
+  <body>
+    <main>
+      <h1>Todo List</h1>
+      <div class="todo-form">
+        <!-- <label for="todo-input">Add New Task</label> -->
+        <input type="text" id="todo-input" placeholder="Add here..." />
+        <!-- <label for="todo-input">Date</label> -->
+        <input type="date" id="todo-date" />
+        <button type="button" id="todo-addBtn">+</button>
+      </div>
+
+      <div class="todo-setting">
+        <select name="filter" id="todo-filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+        <button id="todo-delete">Delete All</button>
+      </div>
+
+      <div class="todo-display">
+        <table class="todo-table">
+          <thead>
+            <th>Task</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </thead>
+          <tbody id="todo-list">
+            <tr class="todo-empty">
+              <td colspan="4">No task found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!-- Link Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

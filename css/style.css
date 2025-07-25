@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2e3436;
+  color: #eeeeec;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+main {
+  width: 50vw;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #729fcf;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.todo-form input[type="text"],
+.todo-form input[type="date"] {
+  flex: 1;
+  padding: 0.5rem;
+  background: #3f4447;
+  border: 1px solid #555753;
+  border-radius: 4px;
+  color: #eeeeec;
+}
+.todo-form input::placeholder {
+  color: #888a85;
+}
+.todo-form button {
+  background: #729fcf;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #2e3436;
+  font-size: 1.2rem;
+}
+.todo-form button:hover {
+  background: #5c6773;
+}
+
+.todo-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.todo-setting select {
+  padding: 0.5rem 1rem;
+  background: #3f4447;
+  border: 1px solid #555753;
+  border-radius: 4px;
+  color: #eeeeec;
+  cursor: pointer;
+}
+
+.todo-setting button {
+  background: #729fcf;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #2e3436;
+}
+/* .todo-setting select {
+  width: 45%;
+} */
+.todo-setting select:hover {
+  background: #5c6773;
+}
+.todo-setting button:hover {
+  background: #d72631;
+  color: #eeeeec;
+}
+
+.todo-display {
+  overflow-x: auto;
+}
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.todo-table thead {
+  background: #3f4447;
+}
+.todo-table th,
+.todo-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #555753;
+  text-align: left;
+}
+.todo-table th {
+  color: #729fcf;
+}
+.todo-empty td {
+  text-align: center;
+  color: #888a85;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888a85;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}
